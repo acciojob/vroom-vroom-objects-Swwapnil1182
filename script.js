@@ -1,8 +1,8 @@
 // Complete the js code
 function Car (make, model){
 	
-		this.make=make;
-		this.model=model;
+		this._make=make;
+		this._model=model;
 	
 	getMakeModel(){
 		return `${this.make} ${this.model}`
@@ -13,11 +13,11 @@ function Car (make, model){
 function SportsCar(make, model, topSpeed) {
 	
 		super(make,model);
-		this.topSpeed=topSpeed;
+		this._topSpeed=topSpeed;
 	
 
 	getTopSpeed(){
-		return this.topSpeed;
+		return this._topSpeed;
 	}
 	
 }
